@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap');
+
+h1,h2,h3,h4,h5,.btn-subscribe{ font-family: 'Merriweather', serif;}
+body{font-family: 'Lora', serif;color: #8A8A8A}
+
+ul li{list-style: none}
+/*******************************************HEADER******************************************/
+header{font-size: 12px;color: #FFFFFF}
+.line-up{width: 1px;height: 10px;margin: auto 7px;background-color: #FFFFFF}
+.info-header i{margin: auto 5px}
+.btn-signup{width: 80px;height: 35px;border: 1px solid #FFFFFF;margin: auto 10px;background-color: transparent;color: #FFFFFF}
+.btn-signup:hover{border: none;background-color: #EA1A22;color: #FFFFFF;transition: all 0.5s}
+
+.btn-discount,.btn-readmore{width: 160px;height: 50px;font-size: 13px;border: none}
+
+/********************************NAVBAR-SCROLL*********************************/
+.navbar {transition: all 0.4s;}
+.navbar .nav-link {color: #fff;margin: 14px 12px;font-size: 14px;}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {color: #EA1A22;text-decoration: none;border-bottom: 1px solid #EA1A22;transition: 0.2s}
+.navbar .navbar-brand {color: #fff;}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {background: #fff; box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);}
+
+.navbar.active .nav-link {color: #1F1F1F;	}
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {color: #EA1A22;text-decoration: none;}
+.navbar.active .navbar-brand {color: #1F1F1F;}
+.navbar.active .btn-signup{border: 1px solid #1F1F1F;color: #1F1F1F;}
+.navbar.active .btn-signup:hover{border: none;color: #FFFFFF;}
+
+/********************************BANNER*********************************/
+
+/********************************FOOTER*********************************/
+.find-us p{margin: auto 20px}
+.box-icon{width: 40px;height: 40px;background-color: #1A1A1A;margin: 10px 3px}
+.info-footer i{margin: 13px}
+.form-sub{width: 100%;height: 40px;border: 1px solid #1A1A1A;background-color: #1A1A1A;margin-top: 16px;}
+.btn-subscribe{width: 100%;height: 40px;border: none;margin-top: 16px;}
+.contact-footer h5{margin-left: 40px}
+/********************************JOIN-US*********************************/
+.title{font-size: 25px;color: #000000;font-weight: 600;}
+.description{font-size: 14px;}
+.best-desc{font-size: 20px}
+video{width: 100%;height: 270px;}
+.container:hover video {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.play-video {
+  background-color: transparent;
+  color: #EA1A22;
+  font-size: 30px;
+  border:none;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/**********************GALLERY*****************************/
+.gallery img{width: 160px;height: 100px;margin: 5px}
+
+/**********************TRAIN ME*****************************/
+.train-me{background-image: url("../images/Banner (2).jpg");background-size: cover;}
+.btn-merri{font-size: 13px;font-family: 'Merriweather', serif;}
+.line{width: 65px;height: 1px;background-color: #FFFFFF;margin-top: -11px}
+
+.courses-me{width: 100%;height: 100%;position: relative;}
+.courses-me img{width: 100%;margin: auto 0px}
+.desc-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.50);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.courses-me:hover .desc-box {
+  height: 100%;
+}
+.desc-box h5{padding-top: 30px}
+/**********************GOAL*****************************/
+.goal-info ol li{border-radius: 50%;width: 15px;height: 15px;background-color: #C4C4C4;}
+.goal-info ol li.active{background-color: #EA1A22}
+.goal-info ol{margin-top: 50px;}
+/**********************COUNTDOWN*****************************/
+.countdown li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.countdown li span {
+  display: block;
+  font-size: 4.5rem;
+}
+/**********************SCHEDULE**************************/
+.schedule{background-image: url("../images/Banner (3).jpg");background-size: cover;}
+.btn-plans{width: 160px;height: 50px;border: none}
+/**********************PACKAGE**************************/
+.packages{background-color: #EAEAEA}
+.package-start{width: 100%;height: 390px;background-color: #E3E3E3;}
+.pack-tit{font-size: 20px;color: #000000;font-family: 'Merriweather', serif;padding: 15px}
+.pack-mon{font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";font-size: 30px;color: #EA1A22;}
+.pack-mon span{font-size: 55px;padding-top: 10px}
+.btn-started{width: 160px;height: 50px;border: none;margin-top: 30px;}
+
+.line-page{width: 900px;height: 1px;background-color: #EAEAEA;margin: 10px auto}
+
+.fb-cus{width: 350px;height: 320px;background-color: #EAEAEA}
+
+@media (max-width: 991.98px) {
+    .navbar {background: #fff;}
+    .navbar .navbar-brand, .navbar .nav-link {color: #1F1F1F;text-align: center}
+	.navbar .btn-signup{background-color: transparent; border: 1px solid #1F1F1F;color: #1F1F1F;width: 90%;margin: 0 auto;}
+	/******************************************/
+	.courses-me{margin: auto 10px}
+	/******************************************/
+	.gallery img{width: 100%;height: 210px;}
+	/******************************************/
+	.countdown  li {font-size: 1.125rem;padding: .75rem;}
+  	.countdown li span {font-size: 3.375rem;}
+}
