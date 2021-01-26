@@ -156,6 +156,23 @@ video{width: 100%;height: 270px;}
 
 /*************************FAST-SERVICE***********************/
 .fast-service{background-color: #EAEAEA}
+.fast-tit{font-size: 20px;color: #000000;font-weight: bold;}
+
+/***********************DỊCH-VỤ*************************/
+/*************************SERVICES***********************/
+.service-item{background-color: #E5E5E5;color: #000000}
+.service-item a:hover{color: #EA1A22;text-decoration: none;}
+.serv-info{margin: 20px;padding-bottom: 15px}
+.serv-desc{font-size: 12px;}
+.serv-bar-item{width: 100%;height: 50px;background-color: #EAEAEA;margin-top: 15px;padding: 14px 17px;display: block;margin-bottom: -15px;border: 1px solid #FFFFFF}
+.serv-bar-item a,.service-item a{color: #000000}
+.serv-bar-item a:hover{color: #EA1A22;text-decoration: none}
+.line-red{height: 2px;width: 100%;background-color: #EA1A22;margin: 30px auto;}
+/*************************SUBSCRIBE-SMALL***********************/
+.subcribe-sm{background-color: #EAEAEA;padding: 30px 36px}
+.form-sub-sm{width: 180px;height: 50px;;font-size: 12px;padding-right: 35px;padding-left: 5px;color: #000000}
+.btn-sub-sm{width: 180px;height: 50px;border: none}
+
 
 @media (max-width: 991.98px){
     .navbar {background: #fff;}
@@ -168,4 +185,6 @@ video{width: 100%;height: 270px;}
 	/******************************************/
 	.countdown  li {font-size: 1.125rem;padding: .75rem;}
   	.countdown li span {font-size: 3.375rem;}
+	
+	.serv-tit > button{width: 100%}
 }
