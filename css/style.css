@@ -7,6 +7,7 @@ h1,h2,h3,h4,h5,.btn-subscribe{ font-family: 'Merriweather', serif;}
 body{font-family: 'Lora', serif;color: #8A8A8A}
 
 ul li{list-style: none}
+li a:hover{text-decoration: none;}
 /*******************************************HEADER******************************************/
 header{font-size: 12px;color: #FFFFFF}
 .line-up{width: 1px;height: 10px;margin: auto 7px;background-color: #FFFFFF}
@@ -173,6 +174,26 @@ video{width: 100%;height: 270px;}
 .form-sub-sm{width: 180px;height: 50px;;font-size: 12px;padding-right: 35px;padding-left: 5px;color: #000000}
 .btn-sub-sm{width: 180px;height: 50px;border: none}
 
+/*************************CHI TIẾT DỊCH VỤ***********************/
+/*************************SERVICE-DETAIL***********************/
+.detail-goods{background-color:#EAEAEA}
+.goods-tit{font-size: 18px;font-family: 'Merriweather', serif;color: #EA1A22;padding: 20px 0 10px 30px }
+.goods-desc{font-size: 12px;padding: 0 0 20px 30px;}
+.card{margin-top: 10px;display: block}
+.card button{color: #1F1F1F;font-size: 13px;font-weight: bold;}
+.card i{margin-left: 20px}
+.card button:hover{color: #EA1A22;text-decoration: none;}
+/*************************SERVICE-CONTACT US***********************/
+.btn-contact{width: 170px;height: 50px;border: none;margin: 10px 100px}
+.send-contact{background-color: #EAEAEA;}
+
+/*************************BLOG***********************/
+/*************************BLOG-ITEM***********************/
+.comment{padding-left: 200px}
+.line-blog{width: 1px;height: 70px;background-color: #EA1A22;}
+.btn-view-more{width: 170px;height: 50px;border: none}
+/*************************BLOG-DETAILS***********************/
+.btn-blog-next,.btn-blog-prev{width: 170px;height: 50px;border: none}
 
 @media (max-width: 991.98px){
     .navbar {background: #fff;}
