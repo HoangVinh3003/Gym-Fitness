@@ -36,27 +36,50 @@ function playVid() {
   vid.play(); 
 } 
 /********************COUNTDOWN*******************/
-(function () {
-  const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
+ $(function() {
+   
 
-  let birthday = "Sep 30, 2021 00:00:00",
-      countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
+	   function countUp(count) {
+		var div_by = 13,
+			speed = Math.round(count / div_by),
+			$display = $('.countdown_first'),
+			run_count = 0,
+			int_speed = 100;
+		var int = setInterval(function () {
+			if (run_count < div_by) {
+				$display.text(speed * run_count);
+				run_count++;
+			} else if (parseInt($display.text()) < count) {
+				var curr_count = parseInt($display.text()) + 1;
+				$display.text(curr_count);
+			} else {
+				clearInterval(int);
+			}
+		}, int_speed);
+	}
+	countUp(12);
 
-        let now = new Date().getTime(),
-            distance = countDown - now;
-
-        document.getElementById("days").innerText = Math.floor(distance / (day)),
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-        //seconds
-      }, 0)
-  }());
-
+function countUp2(count) {
+    var div_by = 151,
+        speed = Math.round(count / div_by),
+        $display = $('.countdown_second'),
+        run_count = 0,
+        int_speed = 50;
+    var int = setInterval(function () {
+        if (run_count < div_by) {
+            $display.text(speed * run_count);
+            run_count++;
+        } else if (parseInt($display.text()) < count) {
+            var curr_count = parseInt($display.text()) + 1;
+            $display.text(curr_count);
+        } else {
+            clearInterval(int);
+        }
+    }, int_speed);
+}
+countUp2(150);
+		   
+		   });
 /********************ACCORDION*******************/
     $(document).ready(function(){
         // Add minus icon for collapse element which is open by default
@@ -71,3 +94,11 @@ function playVid() {
         	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
         });
     });
+
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}

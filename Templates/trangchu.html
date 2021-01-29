@@ -10,6 +10,7 @@
 <link href="../css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="../CSS/font-awesome.min.css" type="text/css">
 <link rel="stylesheet" href="../css/hover.css" type="text/css">
+<link rel="stylesheet" href="../css/slidein.css" type="text/css">
 <link rel="stylesheet" href="../css/style.css" type="text/css" >
 
 <!-- InstanceBeginEditable name="head" -->
@@ -44,11 +45,16 @@
       <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
       <div id="navbarSupportedContent" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href= "gioithieu.html" class="nav-link text-uppercase font-weight-bold">Giới thiệu <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">dịch vụ</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">blog</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">liên hệ</a></li>
-          <i class="fa fa-search nav-link d-none d-lg-block"></i>
+          <li class="nav-item active"><a href= "gioithieu.html" class="nav-link text-uppercase font-weight-bold ">Giới thiệu <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a href="dichvu.html" class="nav-link text-uppercase font-weight-bold">dịch vụ</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link text-uppercase font-weight-bold">blog</a></li>
+          <li class="nav-item"><a href="lienhe.html" class="nav-link text-uppercase font-weight-bold">liên hệ</a></li>
+          <div class="d-flex h-100 my-auto mx-2">
+        <div class="searchbar">
+          <input class="search_input" type="text" name="" placeholder="Search...">
+          <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
           <button class="btn-signup " type="button">Đăng ký</button>
         </ul>
       </div>
@@ -104,7 +110,7 @@
   <section class="join-us p-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <h3 class="title">Tham gia cùng chúng tôi</h3>
           <p class="description">Chương trình luyện tập yoga, gym, group X được thiết kế khoa học và phù hợp từ chuyên gia sẽ giúp bạn đạt được mục tiêu sức khỏe và hình thể.</p>
           <div class="best-desc d-flex"> <i class="fa fa-check-circle text-primary"></i>
@@ -117,7 +123,7 @@
             <p class="description ml-2">Được trang bị đầy đủ tiện nghi 5 sao</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <div class="container">
             <video id="myVideo" src="../images/180419_Boxing_06_01.mp4"></video>
             <div class="middle">
@@ -125,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <h3 class="title">Hình ảnh phòng tập</h3>
           <p class="description">Hãy xem một số hình ảnh về khóa học, dụng cụ và môi trường của các học viên. Hãy tham gia ngay !</p>
           <div class="gallery"> 
@@ -139,34 +145,34 @@
   </section>
   <section class="train-me p-4">
     <div class="container">
-      <p class="btn-merri text-white">Luyện tập cùng tôi</p>
+      <p class="js-slidein btn-merri text-white">Luyện tập cùng tôi</p>
       <div class="line"></div>
-      <h3 class="title text-white pt-2">Trải nghiệm dịch vụ của chúng tôi với giá cực hời</h3>
+      <h3 class="js-slidein title text-white pt-2">Trải nghiệm dịch vụ của chúng tôi với giá cực hời</h3>
       <div class="row">
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <div class="courses-me"> <img src="../images/gallery (1).jpg" alt="">
             <div class="desc-box pl-3">
               <h5 class="text-primary">Các Khóa Học</h5>
               <p class="description">Trải nghiệm những dịch vụ cao cấp nhất sau giờ tập luyện: tủ đồ thông minh, khu vực trang điểm tiện nghi, phòng tắm, xông hơi trang bị hiện đại.</p>
-              <button type="button" class="btn-readmore btn-primary font-weight-bold text-uppercase btn-merri">read more</button>
+              <button type="button" onClick="location.href='dichvu.html';" class="btn-readmore btn-primary font-weight-bold text-uppercase btn-merri">read more</button>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <div class="courses-me"> <img src="../images/gallery (2).jpg" alt="">
             <div class="desc-box pl-3">
               <h5 class="text-primary">Các Khóa Học</h5>
               <p class="description">Trải nghiệm những dịch vụ cao cấp nhất sau giờ tập luyện: tủ đồ thông minh, khu vực trang điểm tiện nghi, phòng tắm, xông hơi trang bị hiện đại.</p>
-              <button type="button" class="btn-readmore btn-primary font-weight-bold text-uppercase btn-merri">read more</button>
+              <button type="button" onClick="location.href='dichvu.html';" class="btn-readmore btn-primary font-weight-bold text-uppercase btn-merri">read more</button>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <div class="courses-me"> <img src="../images/gallery (3).jpg" alt="">
             <div class="desc-box pl-3">
               <h5 class="text-primary">Các Khóa Học</h5>
               <p class="description">Trải nghiệm những dịch vụ cao cấp nhất sau giờ tập luyện: tủ đồ thông minh, khu vực trang điểm tiện nghi, phòng tắm, xông hơi trang bị hiện đại.</p>
-              <button type="button" class="btn-readmore btn-primary font-weight-bold text-uppercase btn-merri">read more</button>
+              <button type="button" onClick="location.href='dichvu.html';" class="btn-readmore btn-primary font-weight-bold text-uppercase btn-merri">read more</button>
             </div>
           </div>
         </div>
@@ -176,7 +182,7 @@
   <section class="goal p-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="js-slidein col-md-6">
           <h3 class="title">Our goal is to provide a superior customer experience</h3>
           <div id="carouselExampleIndicators2" class="carousel slide goal-info " data-ride="carousel">
             <ol class="carousel-indicators">
@@ -204,7 +210,7 @@
             <button type="button" class="btn-discount btn-primary text-uppercase font-weight-bold">nhận ưu đãi</button>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="js-slidein col-md-6">
           <div class="container">
             <video id="myVideo1" src="../images/180419_Boxing_06_01.mp4"></video>
             <div class="middle">
@@ -216,17 +222,6 @@
     </div>
   </section>
   <section class="countdown p-4">
-    <div class="container">
-      <div class="row">
-        <div id="countdown">
-          <ul>
-            <li><span id="days"></span>days</li>
-            <li><span id="hours"></span>Hours</li>
-            <li><span id="minutes"></span>Minutes</li>
-            <li><span id="seconds"></span>Seconds</li>
-          </ul>
-        </div>
-      </div>
       <h3 class="title text-center">Hãy nhanh tay và <span class="sign-up hvr-underline-from-left text-primary">Đăng ký</span> ngay !</h3>
     </div>
   </section>
@@ -240,12 +235,12 @@
   <section class="packages p-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <h3 class="title">Pricing plans and options</h3>
           <p class="description py-2">Đơn giản,thoải mái, và giá cả niêm yết. Hãy lựa chọn gói tập phù hợp với bạn</p>
           <button type="button" class="btn-plans btn-primary text-uppercase font-weight-bold">nhận ưu đãi</button>
         </div>
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <div class="package-start text-center hvr-bounce-in mx-auto">
             <div class="pack-tit">Starter</div>
             <div class="pack-mon">$<span>50</span></div>
@@ -257,7 +252,7 @@
             <button type="button" class="btn-started btn-primary text-uppercase font-weight-bold">nhận ưu đãi</button>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <div class="package-start text-center hvr-bounce-in mx-auto">
             <div class="pack-tit">Starter</div>
             <div class="pack-mon">$<span>50</span></div>
@@ -276,7 +271,7 @@
   <section class="feedbacks py-3 ">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <div class="fb-cus"> <img src="../images/testimonial (1).png" class="img-fluid mx-auto d-block pt-4" alt="img1">
             <div class="fb-info text-center">
               <div class="fb-tit">EXCELLENT WORK</div>
@@ -287,7 +282,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <div class="fb-cus"> <img src="../images/testimonial (2).png" class="img-fluid mx-auto d-block pt-4" alt="img1">
             <div class="fb-info text-center">
               <div class="fb-tit">EXCELLENT WORK</div>
@@ -298,7 +293,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="js-slidein col-md-4">
           <div class="fb-cus"> <img src="../images/testimonial (3).png" class="img-fluid mx-auto d-block pt-4" alt="img1">
             <div class="fb-info text-center">
               <div class="fb-tit">EXCELLENT WORK</div>
@@ -372,5 +367,7 @@
 <script src="../js/popper.min.js"></script> 
 <script src="../js/bootstrap-4.0.0.js"></script> 
 <script src= "../js/app.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyCqncoTJ-IfhpE-eljHloYNlDVDTtE_el4&callback=myMap"></script>
+<script src="../js/slideIn.js"></script>
 	</body>
 <!-- InstanceEnd --></html>
