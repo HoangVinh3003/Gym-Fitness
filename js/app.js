@@ -38,8 +38,7 @@ function playVid() {
 /********************COUNTDOWN*******************/
  $(function() {
    
-
-	   function countUp(count) {
+function countUp(count) {
 		var div_by = 13,
 			speed = Math.round(count / div_by),
 			$display = $('.countdown_first'),
@@ -93,7 +92,7 @@ countUp2(150);
         	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
         });
     });
-
+/********************MAP*******************/
 function myMap() {
 var mapProp= {
   center:new google.maps.LatLng(51.508742,-0.120850),
