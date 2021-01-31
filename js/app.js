@@ -78,8 +78,7 @@ function countUp2(count) {
     }, int_speed);
 }
 countUp2(150);
-		   
-		   });
+});
 /********************ACCORDION*******************/
     $(document).ready(function(){
         // Add minus icon for collapse element which is open by default
